@@ -19,7 +19,7 @@ class CursoController extends Controller
             'imagen' => 'required|image|mimes:jpeg,png,jpg,gif|max:2048',
             'precio' => 'required|numeric|min:0',
             'descuento' => 'required|numeric|min:0|max:100',
-            'docente_id' => 'required|exists:users,id',
+            'docente_id' => 'required|exists:docentes,id',
             'categoria_id' => 'required|exists:categoria,id'
         ]);
         if($validator->fails()){

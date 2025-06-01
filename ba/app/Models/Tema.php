@@ -8,7 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 class Tema extends Model
 {
     use HasFactory;
-    protected $table = 'curso';
+    protected $table = 'tema';
     protected $fillable = [
         'titulo',
         'descripcion',

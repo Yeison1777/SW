@@ -28,7 +28,7 @@ class TemaController extends Controller
             $temaNuevo->save();
             return response()->json([
                 'message' => 'Tema creado exitosamente',
-                'user' => $temaNuevo
+                'tema' => $temaNuevo
             ], 201);
         } catch (\Exception $e) {
             return response()->json([
